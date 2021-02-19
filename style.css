@@ -1,0 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+.centered {
+    text-align: center;
+}
+
+.img-size {
+    width: 20vw;
+}
+
+.logo-size {
+    width: 8.5vw;
+}
+
+.list-type ul {
+    list-style-type: none;
+}
+
+li {
+    display: inline;
+    float: right;
+    margin: 0 4vw;
+}
+
+p {
+    padding-top: 200px;
+}
