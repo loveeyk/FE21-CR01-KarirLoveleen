@@ -1,8 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 body {
     font-family: 'Open Sans', sans-serif;
 }
@@ -19,16 +14,36 @@ body {
     width: 8.5vw;
 }
 
+.navbar {
+    background: rgb(181, 154, 119);
+}
+
 .list-type ul {
     list-style-type: none;
 }
 
-li {
+.navbar li {
     display: inline;
     float: right;
     margin: 0 4vw;
 }
 
+.nav {
+    display: block;
+}
+
 p {
     padding-top: 200px;
+}
+
+.logo-right {
+    float: right;
+}
+
+.header-size h1 {
+    padding-top: 3rem;
+}
+
+.title-size {
+    padding-top: 15rem;
 }
