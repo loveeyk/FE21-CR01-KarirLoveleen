@@ -6,7 +6,7 @@ body {
     text-align: center;
 }
 
-.img-size {
+.img-md {
     width: 20vw;
 }
 
@@ -44,6 +44,11 @@ p {
     padding-top: 3rem;
 }
 
-.title-size {
+.font-size {
     padding-top: 15rem;
+    width: 33vw;
+}
+
+.font-style {
+    font-weight: bold;
 }
