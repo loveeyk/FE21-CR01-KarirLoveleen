@@ -40,13 +40,23 @@ body {
     padding: 1rem;
 }
 
+.header__logo {
+    width: 50%;
+}
+
 
 /** NAVBAR **/
 
 .navbar {
     background: #aaa;
-    height: 200px;
+    height: 100px;
     clear: both;
+    text-align: right;
+}
+
+.list__inline li {
+    display: inline;
+    margin: 45px;
 }
 
 
