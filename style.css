@@ -14,55 +14,104 @@ body {
 /** HEADER **/
 
 .header {
-    display: inline-table;
-    background: #ccc;
-    box-shadow: 0px 2px 5px #888;
+    padding: 2rem;
+    text-align: center;
+    background-color: #efefef;
+    border-bottom: 9px solid #850f11;
 }
 
-.header__col-left,
-.header__col-right {
-    display: table-cell;
-    position: relative;
-    padding: 1rem;
-}
-
-.header__col-left {
-    width: 70%;
+.header:hover .highlight {
+    color: #a31618;
+    text-shadow: 0px 0px 3px rgb(247, 150, 150);
+    transition: 0.5s ease-in-out;
 }
 
 .header__heading {
-    position: absolute;
-    top: 50%;
-    left: 0;
-    transform: translateY(-50%);
-    width: 100%;
-    text-align: center;
-    padding: 1rem;
+    padding: 2rem;
+    display: inline-block;
+    color: #404041;
+}
+
+.header__img-container {
+    float: right;
+    display: block;
 }
 
 .header__logo {
-    width: 50%;
+    width: 200px;
+    padding: 1rem;
+}
+
+@media (max-width: 1120px) {
+    .header__img-container {
+        float: unset;
+    }
 }
 
 
 /** NAVBAR **/
 
 .navbar {
-    background: #aaa;
-    height: 100px;
     clear: both;
-    text-align: right;
+    background: #404041;
+}
+
+.list__inline {
+    list-style-type: none;
+    overflow: hidden;
 }
 
 .list__inline li {
-    display: inline;
-    margin: 45px;
+    float: left;
+}
+
+.list__inline li a {
+    text-decoration: none;
+    display: block;
+    color: white;
+    padding: 32px;
 }
 
 
 /* Content Wrapper */
 
-.content-wrapper {}
+.content-wrapper {
+    width: 100%;
+    overflow: auto;
+}
+
+.content-wrapper__table {
+    width: 100%;
+}
+
+.content-wrapper__table td {
+    overflow: hidden;
+    text-align: center;
+}
+
+.content-wrapper__table img {
+    width: 100%;
+    display: inline-block;
+}
+
+.content-wrapper__table .image-full {
+    margin: -21.875% 0;
+}
+
+.content-wrapper__table .image-half {
+    margin: 0 -21.875%;
+}
+
+.content-wrapper__table .overlay {
+    background: #cccccc63;
+    position: relative;
+}
+
+.content-wrapper__table a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 1px 1px 1px black;
+}
 
 
 /* Footer Wrapper */
