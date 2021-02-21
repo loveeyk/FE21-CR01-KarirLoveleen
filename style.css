@@ -8,6 +8,16 @@
 body {
     font-family: Geneva, Tahoma, sans-serif;
     font-weight: 200;
+    background: #e8e8e861;
+}
+
+.section-heading {
+    padding: 1rem;
+    background: #ccc;
+}
+
+.highlight {
+    color: #a31618
 }
 
 
@@ -20,10 +30,10 @@ body {
     border-bottom: 9px solid #850f11;
 }
 
-.header:hover .highlight {
+.header:hover .highlight-onhover {
     color: #a31618;
     text-shadow: 0px 0px 3px rgb(247, 150, 150);
-    transition: 0.5s ease-in-out;
+    transition: 0.2s ease-in-out;
 }
 
 .header__heading {
@@ -76,18 +86,19 @@ body {
 /* Content Wrapper */
 
 .content-wrapper {
-    width: 100%;
-    overflow: auto;
+    padding: 2rem;
 }
 
 .content-wrapper__table {
     width: 100%;
     overflow: hidden;
+    table-layout: fixed;
 }
 
 .content-wrapper__table td {
     overflow: hidden;
     text-align: center;
+    vertical-align: sub;
 }
 
 .content-wrapper__table img {
@@ -99,15 +110,18 @@ body {
     margin: -21.875% 0;
 }
 
-.content-wrapper__table .image-half {
-    margin: -9.875% 0px;
-}
-
 .content-wrapper__table .overlay {
-    background: #414141b3;
+    background: #8a8a8ab3;
     position: relative;
     outline-style: groove;
     font-size: x-large;
+    padding: 0 1rem;
+}
+
+.content-wrapper__table td:hover a {
+    color: #a31618;
+    text-shadow: 0px 0px 3px rgba(247, 150, 150, 0.604);
+    transition: 0.2s ease-in-out;
 }
 
 .content-wrapper__table a {
@@ -117,6 +131,13 @@ body {
 }
 
 
-/* Footer Wrapper */
+/* Footer */
 
-.footer-wrapper {}
+.footer {
+    background-color: #efefef;
+    padding: 1rem;
+    text-align: center;
+    font-weight: bold;
+    margin: 1rem 0 0;
+    border-top: 4px solid #8b1215;
+}
